@@ -1,3 +1,4 @@
+
 function add(a, b) {
     return a + b;
 }
@@ -36,4 +37,12 @@ function operate(num1,num2,sign){
         return add(num1,num2);
         break;
     }
+}
+
+let buttons = document.querySelector(".buttons-container");
+for(let i=0;i<=9;i++){
+    let button = document.createElement("button");
+    button.setAttribute("id",i);
+    button.innerText = i;
+    buttons.appendChild(button);
 }
