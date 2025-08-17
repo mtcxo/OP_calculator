@@ -14,7 +14,26 @@ function divide(a, b) {
     return a / b;
 }
 
-console.log(add(5,2));
-console.log(substract(5,2));
-console.log(multiply(5,2));
-console.log(divide(5,2));
+let operand1;
+let operand2;
+let operator;
+
+function operate(num1,num2,sign){
+    switch(sign){
+        case "+": 
+        return add(num1,num2);
+        break;
+
+        case "-": 
+        return substract(num1,num2);
+        break;
+
+        case "*": 
+        return multiply(num1,num2);
+        break;
+        
+        case "+": 
+        return add(num1,num2);
+        break;
+    }
+}
